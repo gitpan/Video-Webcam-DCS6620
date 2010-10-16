@@ -1,0 +1,25 @@
+---
+abstract: 'Webcam interface to D-LINK DCS6620'
+author:
+  - 'Jan Henning Thorsen - C<< jhthorsen at cpan.org >>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.96
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.00'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Video-Webcam-DCS6620
+no_index:
+  directory:
+    - inc
+    - t
+resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Video-Webcam-DCS6620
+  homepage: http://search.cpan.org/dist/Video-Webcam-DCS6620
+  repository: git://github.com//home/repositories/webcam-dcs6620.git
+version: 0.01

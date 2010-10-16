@@ -1,0 +1,10 @@
+Revision history for Video-Webcam-DCS6620
+
+0.01     Sat Oct 16 13:41:33 CEST 2010
+       * Add snapshot(), move(), zoom(), focus(), iris(), save_preset()
+         and goto_preset().
+       * Add methods will die on invalid input and output
+
+0.00     Sat Oct 16 13:33:56 CEST 2010
+       * Init repo
+

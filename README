@@ -1,0 +1,74 @@
+NAME
+    Video::Webcam::DCS6620 - Webcam interface to D-LINK DCS6620
+
+VERSION
+    0.01
+
+SYNOPSIS
+        my $camera = Video::Webcam::DCS6620->new;
+        my $res = $camera->snapshot; # might die
+        print $res->body;
+
+DESCRIPTION
+    All the methods take an extra argument, which is an hash ref. The values
+    in the hash ref can be used to override the default "ATTRIBUTES" of this
+    object.
+
+FAULT HANDLING
+    Each method will die with a "Usage..." string on invalid input, and die
+    with the response object, if the response code is something else than
+    200.
+
+ATTRIBUTES
+  hostname
+    The peer hostname or IP address of the webcam. Default: "localhost".
+
+  port
+    The peer port or IP address of the webcam. Default: 80.
+
+  username
+    Username to use for login at the webcam webserver. Default: "admin".
+
+  password
+    Password to use for login at the webcam webserver. Default: "admin".
+
+METHODS
+  new
+    This is the object constructor. It should receive key/value pairs
+    matching the "ATTRIBUTES". It can also take a hash ref, with the same
+    key/values.
+
+  snapshot
+    Returns a HTTP::Response object, containing a JPEG image in the response
+    body.
+
+  move
+    Input is a string: "up", "down", "left" or "right". This method returns
+    a HTTP::Response object.
+
+  zoom
+    Input is a string: "tele" or "wide". This method returns a
+    HTTP::Response object
+
+  focus
+    Input is a string: "near", "far" or "auto". This method returns a
+    HTTP::Response object.
+
+  iris
+    input is a string: "open", "close" or "auto". This method returns a
+    HTTP::Response object.
+
+  save_preset
+    Will save a preset with the given id and name. Input is "($id, $name)".
+    $name is then used in "goto_preset" to recall a given preset. This
+    method returns a HTTP::Response object.
+
+  goto_preset
+    Will go th the given preset, previously saved by "save_preset". $name
+    can also have the special value "home", which will move the camera to
+    the default "home" position. This method returns a HTTP::Response
+    object.
+
+AUTHOR
+    Jan Henning Thorsen - "jhthorsen at cpan.org"
+
