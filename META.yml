@@ -4,6 +4,8 @@ author:
   - 'Jan Henning Thorsen - C<< jhthorsen at cpan.org >>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
+  HTTP::Headers: 5.835
+  HTTP::Response: 5.836
   Test::More: 0.96
 configure_requires:
   ExtUtils::MakeMaker: 6.42
@@ -18,8 +20,10 @@ no_index:
   directory:
     - inc
     - t
+requires:
+  LWP::UserAgent: 5.835
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Video-Webcam-DCS6620
   homepage: http://search.cpan.org/dist/Video-Webcam-DCS6620
-  repository: git://github.com//home/repositories/webcam-dcs6620.git
-version: 0.01
+  repository: git://github.com//home/repositories/video-webcam-dcs6620.git
+version: 0.02

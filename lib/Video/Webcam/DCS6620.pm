@@ -6,7 +6,7 @@ Video::Webcam::DCS6620 - Webcam interface to D-LINK DCS6620
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 SYNOPSIS
 
@@ -31,7 +31,7 @@ use strict;
 use warnings;
 use LWP::UserAgent;
 
-our $VERSION = eval '0.01';
+our $VERSION = eval '0.02';
 our $UA = LWP::UserAgent->new(timeout => 10); # Subject for change - meant for internal usage
 
 =head1 ATTRIBUTES

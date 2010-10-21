@@ -1,5 +1,8 @@
 Revision history for Video-Webcam-DCS6620
 
+0.02     Thu Oct 21 22:42:49 CEST 2010
+       * Fix Makefile.PL. Forgot some deps
+
 0.01     Sat Oct 16 13:41:33 CEST 2010
        * Add snapshot(), move(), zoom(), focus(), iris(), save_preset()
          and goto_preset().
