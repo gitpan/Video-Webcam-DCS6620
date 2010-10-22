@@ -2,7 +2,7 @@ NAME
     Video::Webcam::DCS6620 - Webcam interface to D-LINK DCS6620
 
 VERSION
-    0.02
+    0.0201
 
 SYNOPSIS
         my $camera = Video::Webcam::DCS6620->new;

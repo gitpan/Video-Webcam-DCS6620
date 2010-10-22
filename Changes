@@ -1,5 +1,8 @@
 Revision history for Video-Webcam-DCS6620
 
+0.0201   Fri Oct 22 10:00:40 CEST 2010
+       * Change expected test result.
+
 0.02     Thu Oct 21 22:42:49 CEST 2010
        * Fix Makefile.PL. Forgot some deps
 

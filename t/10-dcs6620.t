@@ -37,7 +37,7 @@ plan tests => 32;
         ok(0, $description);
     }
     else {
-        is($@->code, 500, $description);
+        isnt($@->code, 200, $description);
     }
 }
 
